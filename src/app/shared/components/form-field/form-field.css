@@ -1,0 +1,16 @@
+.field {
+  display: flex;
+  gap: calc(var(--page-spacing) / 3);
+}
+
+.field input,
+.field textarea {
+  border: var(--stroke-s) solid black;
+  border-radius: var(--rounded-m);
+}
+.field *.disabled,
+.field *.disabled:focus {
+  border-color: transparent;
+  cursor: text;
+  caret-color: transparent;
+}

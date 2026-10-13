@@ -1,0 +1,9 @@
+.carousel {
+  display: flex;
+  gap: 2em;
+  border: var(stroke-s) solid black;
+  border-radius: var(--rounded-s);
+}
+.carousel > * {
+  flex: 1;
+}

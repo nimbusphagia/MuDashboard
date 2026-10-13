@@ -1,0 +1,5 @@
+.form {
+  display: grid;
+  grid-template-columns: 550px auto;
+  gap: calc(var(--page-spacing));
+}

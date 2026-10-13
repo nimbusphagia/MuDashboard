@@ -1,0 +1,5 @@
+<div class="carousel" [style.height]="height()">
+  @for (m of visibleMedia(); track m.publicId) {
+    <app-thumbnail [src]="m.url" [alt]="m.altText" [height]="height()" />
+  }
+</div>

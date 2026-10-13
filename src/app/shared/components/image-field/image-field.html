@@ -1,0 +1,16 @@
+<div class="image-field">
+  <div class="img-card">
+    <label class="capitalize" [for]="name()">{{ name() }}</label>
+    <app-thumbnail [src]="preview()" height="250px" />
+  </div>
+  @if (!disabled()) {
+    <input
+      [id]="name()"
+      [name]="name()"
+      value=""
+      type="image"
+      [attr.formControlName]="name()"
+      class="color-[transparent]"
+    />
+  }
+</div>

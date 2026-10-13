@@ -1,0 +1,30 @@
+<div
+  class="field"
+  [class]="{
+    col: direction() == 'col',
+    row: direction() == 'row',
+  }"
+>
+  <label class="capitalize" [for]="name()">{{ name() }}:</label>
+  @if (tag() == 'textarea') {
+    <textarea
+      [id]="name()"
+      [name]="name()"
+      [attr.formControlName]="name()"
+      [rows]="rows()"
+      [class.disabled]="disabled()"
+      [readonly]="disabled()"
+      required
+    ></textarea>
+  } @else {
+    <input
+      [id]="name()"
+      [name]="name()"
+      [type]="type()"
+      [attr.formControlName]="name()"
+      [class.disabled]="disabled()"
+      [readonly]="disabled()"
+      required
+    />
+  }
+</div>

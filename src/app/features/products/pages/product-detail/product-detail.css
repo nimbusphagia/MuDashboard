@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  display: flex;
+  gap: calc(var(--page-spacing) / 3);
+}
+.toggle-container {
+  display: flex;
+  gap: calc(var(--page-spacing) / 3);
+}
+.toggle-container .option {
+  border: var(--stroke-s) solid black;
+  border-radius: var(--rounded-m);
+  padding: 4px 16px;
+}
+.option .selected {
+  border-width: var(--stroke-m);
+}

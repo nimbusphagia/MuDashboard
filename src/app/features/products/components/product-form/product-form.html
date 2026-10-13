@@ -1,0 +1,19 @@
+<form [formGroup]="productForm" class="form">
+  <div class="card">
+    <app-image-field
+      name="thumbnails"
+      preview="https://m.media-amazon.com/images/I/61yArGR8YkL._AC_UF1000,1000_QL80_.jpg"
+      variant="preview"
+      [disabled]="true"
+    />
+    <app-image-carousel [media]="media()" height="150px" [limit]="3" />
+  </div>
+  <div class="card">
+    <div class="flex justify-between">
+      <app-form-field name="name" [disabled]="isDisabled()" />
+      <app-form-field name="price" [disabled]="isDisabled()" />
+      <app-form-field name="sku" [disabled]="isDisabled()" />
+    </div>
+    <app-form-field name="description" tag="textarea" [rows]="6" [disabled]="isDisabled()" />
+  </div>
+</form>
