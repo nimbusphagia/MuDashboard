@@ -32,16 +32,18 @@
   background-color: var(--color-fg);
   border-radius: 100%;
   transition: box-shadow 0.3s ease-in;
+  width: fit-content;
+  margin: auto;
 }
 .list-item:hover {
   box-shadow: var(--shadow-xs);
 }
 .list-item svg {
+  padding: 8px;
   stroke-width: 1.5;
   height: 22px;
   width: 22px;
   box-sizing: content-box;
-  padding: 10px;
 }
 .list-item:has(.active) {
   background-color: var(--color-accent-primary);

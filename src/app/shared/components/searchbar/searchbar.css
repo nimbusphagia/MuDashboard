@@ -8,9 +8,11 @@
   padding: 8px;
 }
 .label svg {
+  color: var(--color-muted);
   height: 18px;
 }
 .input {
   width: 300px;
   font-size: 14px;
+  color: var(--color-muted);
 }
