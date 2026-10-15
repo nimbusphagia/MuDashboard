@@ -1,0 +1,11 @@
+<nav class="header">
+  @for (r of routes(); track r.name; let i = $index) {
+    <button
+      [class]="i === selectedIndex() ? 'accent-btn' : ''"
+      class="tab"
+      (click)="updateContent(i)"
+    >
+      {{ r.name }}
+    </button>
+  }
+</nav>

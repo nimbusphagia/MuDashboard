@@ -1,0 +1,13 @@
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: var(--margin-top);
+  gap: var(--margin-top);
+}
+.content-card {
+  flex: 1;
+  border-radius: var(--rounded-md);
+  background-color: var(--color-fg);
+  box-shadow: var(--shadow-xs);
+}

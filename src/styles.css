@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+@theme {
+  --spacing: 30px;
+  --rounded-sm: 10px;
+  --rounded-md: 15px;
+  --rounded-lg: 22px;
+
+  --color-bg: #faf6f7;
+  --color-fg: #ffffff;
+  --color-accent-primary: #1f2426;
+  --color-muted: #000000c9;
+  --font-sans: 'Roboto', sans-serif;
+}
+:root {
+  box-sizing: content-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+body {
+  /* Utilities */
+  --stroke-s: 1px;
+  --stroke-m: 1.5px;
+  --stroke-l: 2px;
+  --shadow-transition: box-shadow 0.3s ease-in;
+
+  --icon-s: 14px;
+
+  /*Global Styles */
+  --card-border: var(--stroke-m) solid black;
+
+  /* Constants */
+  --navbar-width: 75px;
+  --margin-top: calc(var(--spacing) / 2);
+  --logo-size: 45px;
+
+  --min-height: calc(100vh - (var(--margin-top) * 2));
+
+  /* Body Layout */
+  padding: var(--margin-top) 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing);
+  gap: calc(var(--spacing) * 0.75);
+}
+
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: column;
+}
+a,
+button {
+  cursor: pointer;
+}
+.card {
+  border: var(--card-border);
+  border-radius: var(--rounded-m);
+  padding: calc(var(--spacing) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) / 2);
+}
+.round {
+  border-radius: 100%;
+  padding: 0.6em;
+  transition: var(--shadow-transition);
+}
+.round:hover,
+.tab:hover {
+  box-shadow: var(--shadow-sm);
+}
+.tab {
+  border-radius: var(--rounded-lg);
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 5px 24px;
+  box-shadow: var(--shadow-xs);
+  font-weight: 450;
+  font-size: 14px;
+  transition: var(--shadow-transition);
+  color: var(--color-muted);
+}
+.accent-btn {
+  background-color: var(--color-accent-primary);
+  color: var(--color-bg);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}

@@ -1,5 +1,5 @@
 .home {
   display: flex;
   height: var(--min-height);
-  gap: 10px;
+  gap: 5px;
 }
