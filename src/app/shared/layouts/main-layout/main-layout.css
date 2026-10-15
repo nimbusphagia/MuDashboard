@@ -6,8 +6,8 @@
   gap: var(--margin-top);
 }
 .content-card {
-  background-color: var(--color-fg);
   flex: 1;
   border-radius: var(--rounded-md);
+  background-color: var(--color-fg);
   box-shadow: var(--shadow-xs);
 }

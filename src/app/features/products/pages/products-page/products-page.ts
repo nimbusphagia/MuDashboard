@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
-import { ProductDetail } from '../product-detail/product-detail';
+import { TabbedLinks } from '../../../../shared/components/tabbed-links/tabbed-links';
 
 @Component({
-  imports: [ProductDetail],
+  imports: [TabbedLinks],
   selector: 'app-products-page',
   styleUrl: './products-page.css',
   templateUrl: './products-page.html',
 })
-export class ProductsPage {}
+export class ProductsPage {
+  readonly routes = [
+    { name: 'Books', route: 'books' },
+    { name: 'Workshops', route: 'workshops' },
+    { name: 'Merch', route: 'merch' },
+  ];
+}
