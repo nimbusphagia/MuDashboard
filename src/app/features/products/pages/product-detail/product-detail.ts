@@ -1,10 +1,9 @@
 import { Component, input } from '@angular/core';
 import { ProductForm } from '../../components/product-form/product-form';
-import { LucidePencil } from '@lucide/angular';
 import { ProductBase } from '../../models/product';
 
 @Component({
-  imports: [ProductForm, LucidePencil],
+  imports: [ProductForm],
   selector: 'app-product-detail',
   styleUrls: ['./product-detail.css', '../../../../../styles.css'],
   templateUrl: './product-detail.html',

@@ -10,6 +10,6 @@ import { Thumbnail } from '../thumbnail/thumbnail';
 export class ImageField {
   name = input.required<string>();
   preview = input.required<string>();
-  variant = input<string>('');
+  showTitle = input<boolean>(false);
   disabled = input<boolean>(false);
 }

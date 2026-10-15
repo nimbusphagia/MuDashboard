@@ -1,6 +1,8 @@
 <div class="image-field">
   <div class="img-card">
-    <label class="capitalize" [for]="name()">{{ name() }}</label>
+    @if (showTitle()) {
+      <label class="capitalize" [for]="name()">{{ name() }}</label>
+    }
     <app-thumbnail [src]="preview()" height="250px" />
   </div>
   @if (!disabled()) {
