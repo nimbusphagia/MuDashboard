@@ -1,6 +1,6 @@
 .field {
   display: flex;
-  gap: calc(var(--page-spacing) / 3);
+  gap: calc(var(--spacing) / 3);
 }
 
 .field input,

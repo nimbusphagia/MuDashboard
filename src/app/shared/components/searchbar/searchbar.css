@@ -1,0 +1,16 @@
+.wrap {
+  background-color: var(--color-fg);
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+}
+.label svg {
+  height: 18px;
+}
+.input {
+  width: 300px;
+  font-size: 14px;
+}

@@ -1,5 +1,6 @@
-.form {
+#form {
   display: grid;
-  grid-template-columns: 550px auto;
-  gap: calc(var(--page-spacing));
+  grid-template-columns: 30% auto;
+  align-items: center;
+  gap: calc(var(--spacing));
 }

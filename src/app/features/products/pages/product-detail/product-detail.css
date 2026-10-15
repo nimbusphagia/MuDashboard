@@ -5,11 +5,11 @@
 }
 .title {
   display: flex;
-  gap: calc(var(--page-spacing) / 3);
+  gap: calc(var(--spacing) / 3);
 }
 .toggle-container {
   display: flex;
-  gap: calc(var(--page-spacing) / 3);
+  gap: calc(var(--spacing) / 3);
 }
 .toggle-container .option {
   border: var(--stroke-s) solid black;

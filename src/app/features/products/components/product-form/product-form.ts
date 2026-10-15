@@ -5,13 +5,12 @@ import { ImageField } from '../../../../shared/components/image-field/image-fiel
 import { input } from '@angular/core';
 import { ProductBase } from '../../models/product';
 import { MediaRes } from '../../../../shared/models/media';
-import { ImageCarousel } from '../../../../shared/components/image-carousel/image-carousel';
 import { MOCK_MEDIA } from '../../../../mock-data/media';
 
 @Component({
-  imports: [ReactiveFormsModule, FormField, ImageField, ImageCarousel],
+  imports: [ReactiveFormsModule, FormField, ImageField],
   selector: 'app-product-form',
-  styleUrl: './product-form.css',
+  styleUrls: ['./product-form.css', '../../../../../styles.css'],
   templateUrl: './product-form.html',
 })
 export class ProductForm {

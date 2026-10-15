@@ -1,14 +1,15 @@
-<form [formGroup]="productForm" class="form">
-  <div class="card">
+<form [formGroup]="productForm" id="form" class="card">
+  <div class="px-[var(--spacing/2)]">
     <app-image-field
       name="thumbnails"
       preview="https://m.media-amazon.com/images/I/61yArGR8YkL._AC_UF1000,1000_QL80_.jpg"
-      variant="preview"
       [disabled]="true"
     />
-    <app-image-carousel [media]="media()" height="150px" [limit]="3" />
   </div>
-  <div class="card">
+  <!--
+  <app-image-carousel [media]="media()" height="150px" [limit]="3" />
+  -->
+  <div class="card border-none!">
     <div class="flex justify-between">
       <app-form-field name="name" [disabled]="isDisabled()" />
       <app-form-field name="price" [disabled]="isDisabled()" />
